@@ -1,6 +1,5 @@
-import tkinter as tk
 import customtkinter as ctk
-from app.auth.login import Login
+from app.auth.login.login import Login
 from app.auth.signup import Signup
 from app.pages.dashboard import Dashboard
 
@@ -9,22 +8,22 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__()
         # Stores the logged-in user's session
-        self.user_session = None  
+        self.user_session = [1,"john_doe","test@test.com","password"]
 
         # Application title
         self.title("My Desktop Application")
 
         # Make the freem zoomed
         # self.wm_attributes('-zoomed', True)
-        self.geometry("1080x900")
+        self.geometry("767x600")
         
         # Configure grid layout for centering
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
-
         # Initial screen setup
-        self.show_login_screen()
+        # self.show_login_screen()
+        self.show_dashboard_screen()
 
     def set_user_session(self, user):
         """Sets the current user session."""
@@ -95,4 +94,5 @@ class App(ctk.CTk):
 
     def run(self):
         self.mainloop()
+
 

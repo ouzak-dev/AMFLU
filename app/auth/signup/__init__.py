@@ -2,7 +2,7 @@ import customtkinter as ctk
 from tkinter import messagebox
 from app.database import open_db_connection, close_db_connection
 from app.database.db_setup import UserManager
-from . import hash_password
+from .. import hash_password
 
 class Signup(ctk.CTkFrame):
     def __init__(self, master, app):

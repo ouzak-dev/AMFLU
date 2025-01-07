@@ -1,1 +1,17 @@
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
 venv/
+
+# Cache files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# IDE and editor files
+.vscode/
+.idea/

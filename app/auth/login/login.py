@@ -2,7 +2,7 @@ import customtkinter as ctk
 from tkinter import messagebox
 from app.database import open_db_connection, close_db_connection
 from app.database.db_setup import UserManager
-from . import verify_password
+from .. import verify_password
 
 
 class Login(ctk.CTkFrame):
